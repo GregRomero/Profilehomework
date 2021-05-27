@@ -2,7 +2,7 @@ body{
     background-color: rgb(8, 8, 8);
 }
 h1{
-    border: 5px solid rgb(245, 6, 6);
+    border: 5px solid rgb(133, 6, 6);
     padding: 10px;
     text-align: center;
     font-size: 2rem;
@@ -17,7 +17,7 @@ img{
     border-radius: 50%;
     height: 200px;
     width: 230px;
-    border: 4px solid rgb(245, 6, 6);
+    border: 4px solid rgb(133, 6, 6);
     box-shadow: 0px 5px 10px rgba(0,0,0,.2);
     position: absolute;
     left: 50px;
@@ -51,7 +51,7 @@ img{
         text-align: center;
     }
     .collapsible {
-        background-color: #777;
+        background-color: rgb(133, 6, 6);
         color: white;
         cursor: pointer;
         padding: 18px;
@@ -73,32 +73,22 @@ img{
         background-color: #f1f1f1;
       }
 
-      /* Split the screen in half */
-.split {
-    height: 50%;
-    width: 50%;
-    position: center;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
   
-  /* Control the left side */
-  .left {
-    left: 0;
+  /* Control the top */
+  .top {
+    top: 0;
     background-color: rgb(245, 6, 6);
   }
   
-  /* Control the right side */
-  .right {
-    right: 0;
+  /* Control the bottom */
+  .bottom {
+    bottom: 0;
     background-color: rgb(245, 6, 6);
   }
   
   /* If you want the content centered horizontally and vertically */
   .centered {
-    position: center;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -108,5 +98,6 @@ img{
   /* Style the image inside the centered container, if needed */
   .centered img {
     width: 50px;
-    border-radius: 50%;
+    border-radius: 100%;
   }
+
